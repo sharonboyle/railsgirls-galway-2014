@@ -1,4 +1,5 @@
 RailgirlsGalway2014::Application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   root :to => redirect('/places')
   resources :comments
 

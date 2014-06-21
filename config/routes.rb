@@ -1,4 +1,5 @@
 RailgirlsGalway2014::Application.routes.draw do
+  root :to => redirect('/places')
   resources :comments
 
   resources :places
@@ -9,7 +10,7 @@ RailgirlsGalway2014::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'registrations#edit'
+  # root 'registrations#edit'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

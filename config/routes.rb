@@ -1,4 +1,6 @@
 RailgirlsGalway2014::Application.routes.draw do
+  resources :comments
+
   resources :places
 
   devise_for :users
